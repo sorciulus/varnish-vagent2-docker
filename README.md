@@ -11,6 +11,10 @@ Use the following command:
 When all the services are started, you can try the magic of the varnish by calling the test html page via Postman or through the browser.
 On port 80 ngnix respond providing html page. On the 8080 port respond Varnish  will respond by making a call to the nginx backend and returning the result
 
-Without Varnish
+## Without Varnish
 
-With Varnish
+![alt text](https://raw.githubusercontent.com/sorciulus/varnish-vagent2-docker/master/images/without.png)
+
+## With Varnish
+
+![alt text](https://raw.githubusercontent.com/sorciulus/varnish-vagent2-docker/master/images/with.png)
