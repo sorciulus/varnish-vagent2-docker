@@ -1,0 +1,18 @@
+version: '3'
+services:
+  varnish:
+    build: cache/.
+    ports:
+      - "6085:6085"
+      - "6081:6081"
+      - "8080:8080"
+  web:
+    image: nginx:1.13
+    volumes:
+      - ./web/conf:/etc/nginx/conf.d/
+      - ./web/html:/var/www/
+    ports:
+       - "80:80"
+    environment:       
+       - NGINX_PORT=80
+    command: /bin/bash -c "nginx -g 'daemon off;'"
