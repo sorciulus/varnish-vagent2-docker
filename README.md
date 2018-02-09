@@ -1,5 +1,5 @@
 # Docker - Cache server
-Docker container for Varnish with Varnish Agent2
+Docker container for Varnish 4.1.x with [Varnish Agent2](https://github.com/varnish/vagent2)
 
 ## Start
 
